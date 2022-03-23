@@ -1,0 +1,9 @@
+function gotresult(error, result) {
+    if (error) {
+        console.error(error);
+    }
+    console.log(result);
+    document.getElementById("label").innerHTML="label: "+result[0].label;
+    
+    document.getElementById("confidence").innerHTML="Confidence: "+percent+"%";
+}
